@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUA_Client", "OpcUA_Client\OpcUA_Client.csproj", "{4A861D29-67D0-4CEA-8A8F-88CB5BA09B91}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OpcUa_Datasaver_Installer", "OpcUa_Datasaver_Installer\OpcUa_Datasaver_Installer.vdproj", "{69C460D5-759E-4627-AF1A-1B09508910B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A861D29-67D0-4CEA-8A8F-88CB5BA09B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A861D29-67D0-4CEA-8A8F-88CB5BA09B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A861D29-67D0-4CEA-8A8F-88CB5BA09B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A861D29-67D0-4CEA-8A8F-88CB5BA09B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C460D5-759E-4627-AF1A-1B09508910B5}.Debug|Any CPU.ActiveCfg = Debug
+		{69C460D5-759E-4627-AF1A-1B09508910B5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B41E6295-AC5A-4676-9194-7A0CDEFDF5CE}
+	EndGlobalSection
+EndGlobal

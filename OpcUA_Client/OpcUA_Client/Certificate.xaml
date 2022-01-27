@@ -1,0 +1,137 @@
+﻿<Window x:Class="OpcUA_Client.Certificate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpcUA_Client"
+        mc:Ignorable="d"
+        Title="Certificate Validation" Height="289.338" Width="251.131">
+    <Grid Margin="0,0,2,4">
+        <FlowDocumentReader>
+            <FlowDocument>
+                <Table CellSpacing="6">
+                    
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+                        <!--Tabelrow 1: Info -->
+                        <TableRow Background="SkyBlue">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Attribute</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Value</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 2: Issuer Info -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Issuer Info:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="IssuerInfo" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 3: Valid From -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Valid From:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="ValidFrom" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 4: Valid To -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Valid To:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="ValidTo" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 5: Serial Number -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Serial Number:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="SerialNumber" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 6: Signature algorithm -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Signature Algorithm:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="Algorithm" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 7: Cipher Strength -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Cipher Strength:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="CipherStrengh" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 8: thumbprint -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Thumbprint:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="Thumbprint" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                        <!--Tabelrow 9: URI -->
+                        <TableRow Background="LightGray">
+                            <TableCell>
+                                <Paragraph FontFamily="Arial" FontSize="10">Uri:</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <TextBlock x:Name="TableURI" FontFamily="Arial" FontSize="10"></TextBlock>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+
+                    </TableRowGroup>
+                    
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="32,207,0,0" VerticalAlignment="Top" Width="75" Click="Accept_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="134,207,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click"/>
+
+
+
+    </Grid>
+</Window>
